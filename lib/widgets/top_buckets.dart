@@ -1,3 +1,4 @@
+import 'package:bucket_list/data/favorite_bucket.dart';
 import 'package:flutter/material.dart';
 
 class TopBuckets extends StatefulWidget {
@@ -38,10 +39,15 @@ class _TopBucketsState extends State<TopBuckets> {
                       topLeft: Radius.circular(10),
                       topRight: Radius.circular(10)),
                 ),
-                child: IconButton(
-                  icon: Icon(Icons.more_vert),
-                  color: Colors.amberAccent,
-                  onPressed: () {},
+                child: Column(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.more_vert),
+                      color: Colors.amberAccent,
+                      onPressed: () {},
+                    ),Text(FavList[1].description,style: TextStyle(fontSize:
+                    12,color: Colors.black54),)
+                  ],
                 ),
               ),
               Container(
@@ -52,6 +58,11 @@ class _TopBucketsState extends State<TopBuckets> {
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(10),
                       bottomRight: Radius.circular(10)),
+                ),
+                child: Container(
+                  margin: EdgeInsets.only(top:5,left: 5),
+                  child: Text(FavList[1].name,style: TextStyle(color: Colors
+                      .white,fontSize: 18,fontWeight: FontWeight.w600),),
                 ),
               )
             ],
