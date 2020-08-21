@@ -44,16 +44,22 @@ class _TopBucketsState extends State<TopBuckets> {
                     Container(
                       alignment: Alignment.topRight,
                       child: Container(
-                        margin: EdgeInsets.only(right: 2,top: 5),
+                        margin: EdgeInsets.only(right: 2, top: 5),
                         child: Icon(
                           Icons.more_vert,
                           color: Colors.amberAccent,
                         ),
                       ),
                     ),
-                    Text(
-                      FavList[1].description,
-                      style: TextStyle(fontSize: 12, color: Colors.black54),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(left: 5),
+                      child: Text(
+                        FavList[1].description,
+                        style: TextStyle(fontSize: 12, color: Colors.black54),
+                      ),
                     )
                   ],
                 ),
