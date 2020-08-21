@@ -41,10 +41,15 @@ class _TopBucketsState extends State<TopBuckets> {
                 ),
                 child: Column(
                   children: [
-                    IconButton(
-                      icon: Icon(Icons.more_vert),
-                      color: Colors.amberAccent,
-                      onPressed: () {},
+                    Container(
+                      alignment: Alignment.topRight,
+                      child: Container(
+                        margin: EdgeInsets.only(right: 2,top: 5),
+                        child: Icon(
+                          Icons.more_vert,
+                          color: Colors.amberAccent,
+                        ),
+                      ),
                     ),
                     Text(
                       FavList[1].description,
