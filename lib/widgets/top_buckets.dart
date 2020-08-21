@@ -45,8 +45,11 @@ class _TopBucketsState extends State<TopBuckets> {
                       icon: Icon(Icons.more_vert),
                       color: Colors.amberAccent,
                       onPressed: () {},
-                    ),Text(FavList[1].description,style: TextStyle(fontSize:
-                    12,color: Colors.black54),)
+                    ),
+                    Text(
+                      FavList[1].description,
+                      style: TextStyle(fontSize: 12, color: Colors.black54),
+                    )
                   ],
                 ),
               ),
@@ -60,9 +63,14 @@ class _TopBucketsState extends State<TopBuckets> {
                       bottomRight: Radius.circular(10)),
                 ),
                 child: Container(
-                  margin: EdgeInsets.only(top:5,left: 5),
-                  child: Text(FavList[1].name,style: TextStyle(color: Colors
-                      .white,fontSize: 18,fontWeight: FontWeight.w600),),
+                  margin: EdgeInsets.only(top: 5, left: 5),
+                  child: Text(
+                    FavList[1].name,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600),
+                  ),
                 ),
               )
             ],

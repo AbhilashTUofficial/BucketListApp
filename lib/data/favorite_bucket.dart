@@ -3,12 +3,11 @@ class FavoriteBucket {
   final String description;
   final String dateTime;
 
-
-  FavoriteBucket(
-      {this.name,
-      this.description,
-      this.dateTime,
-});
+  FavoriteBucket({
+    this.name,
+    this.description,
+    this.dateTime,
+  });
 }
 
 List<FavoriteBucket> FavList = [
@@ -16,30 +15,25 @@ List<FavoriteBucket> FavList = [
     name: "Sky Dive",
     description: "Sky Dive without a parachute",
     dateTime: "21/10/2001",
-
   ),
   FavoriteBucket(
     name: "Sky Dive",
     description: "Sky Dive without a parachute",
     dateTime: "21/10/2001",
-
   ),
   FavoriteBucket(
     name: "Sky Dive",
     description: "Sky Dive without a parachute",
     dateTime: "21/10/2001",
-
   ),
   FavoriteBucket(
     name: "Sky Dive",
     description: "Sky Dive without a parachute",
     dateTime: "21/10/2001",
-
   ),
   FavoriteBucket(
     name: "Sky Dive",
     description: "Sky Dive without a parachute",
     dateTime: "21/10/2001",
-
   ),
 ];
